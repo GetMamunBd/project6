@@ -1,0 +1,48 @@
+$PrimaryColor:#6dc234;
+$GreyColor:#859196;
+
+footer {
+    padding: 100px 8%;
+    margin-top: 120px;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+    background: #343a40;
+    color: #d4d4d4;
+
+    h3 {
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    div a {
+        display: block !important;
+        padding: 10px 0;
+
+        &:hover {
+            color: $PrimaryColor;
+        }
+    }
+
+    a {
+        color: $GreyColor;
+    }
+
+    .social {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .fab {
+            background: #262c31;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            padding: 0;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+    }
+}

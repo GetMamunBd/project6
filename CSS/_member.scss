@@ -1,0 +1,46 @@
+$PrimaryColor:#6dc234;
+$GreyColor:#859196;
+
+.member {
+    padding: 0 8%;
+    margin-bottom: 80px;
+    transition: .5s;
+
+    .member-item {
+        position: relative;
+    }
+
+    // &:hover .nav-btn {
+    //     visibility: visible;
+    // }
+}
+
+.owl-carousel:hover .nav-btn {
+    visibility: visible;
+}
+
+.nav-btn {
+    color: white;
+    background: $PrimaryColor;
+    padding: 15px 20px;
+    position: absolute;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.prev-slide {
+    left: -20px;
+    top: 35%;
+    transition: .5s;
+}
+
+.next-slide {
+    right: -20px;
+    top: 35%;
+    transition: .5s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $PrimaryColor !important;
+}
