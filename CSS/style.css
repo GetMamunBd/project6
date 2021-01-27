@@ -33,6 +33,7 @@
 
 .nav-bg {
   background: rgba(0, 0, 0, 0.95);
+  height: 10vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -368,12 +369,13 @@ footer .social .fab {
   header nav {
     background: rgba(0, 0, 0, 0.95);
     position: fixed;
+    height: 10vh;
     width: 100%;
   }
   header nav ul {
     z-index: 999 !important;
     position: absolute;
-    top: 15vh;
+    top: 10vh;
     right: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -384,7 +386,7 @@ footer .social .fab {
             align-items: flex-end;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 85vh;
+    height: 90vh;
     width: 300px;
     padding: 50px 8% 200px 0;
     background: rgba(0, 0, 0, 0.95);

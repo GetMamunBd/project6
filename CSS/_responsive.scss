@@ -30,18 +30,19 @@
     header nav {
         background: rgba(0, 0, 0, 0.95);
         position: fixed;
+        height: 10vh;
         width: 100%;
     }
 
     header nav ul {
         z-index: 999 !important;
         position: absolute;
-        top: 15vh;
+        top: 10vh;
         right: 0;
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
-        height: 85vh;
+        height: 90vh;
         width: 300px;
         padding: 50px 8% 200px 0;
         background: rgba(0, 0, 0, 0.95);
