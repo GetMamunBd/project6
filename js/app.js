@@ -3,6 +3,9 @@ $(document).ready(function () {
         margin: 10,
         loop: true,
         nav: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
         navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></div>", "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"],
         responsive: {
             0: {
@@ -23,11 +26,10 @@ burger.addEventListener('click', () => {
     burger.classList.toggle("toggle");
 });
 
-
 $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
         $('nav').addClass('nav-bg');
     } else {
         $('nav').removeClass('nav-bg');
     }
-})
+});

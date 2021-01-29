@@ -28,12 +28,13 @@ $GreyColor:#859196;
 .feature-box {
     padding: 50px 40px;
     border: 1px solid #dddddd;
-    transition: all .5s cubic-bezier(0.23, 0.2, 0.71, 0.77);
+    transition: all .3s cubic-bezier(0.23, 0.2, 0.71, 0.77);
 
     .fas {
         font-size: 50px;
         color: $PrimaryColor;
         margin-bottom: 30px;
+        transition: .3s;
     }
 
     h3 {
@@ -41,6 +42,7 @@ $GreyColor:#859196;
         font-weight: 500;
         margin-bottom: 15px;
         color: #363636;
+        transition: .3s;
     }
 
     p {
@@ -50,11 +52,25 @@ $GreyColor:#859196;
     }
 
     &:hover .fas {
-        animation: icon .5s infinite alternate linear;
+        animation: icon .8s infinite alternate linear;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #6dc2347a;
+        box-shadow: 0px 5px 30px 3px #6dc234,
+            inset 0px -3px 0 #6dc234;
+        ;
     }
 
     &:hover {
-        box-shadow: inset 0px -6px 0 #6dc234;
+        background: #343a40;
+    }
+
+    &:hover h3 {
+        color: white;
     }
 }
 

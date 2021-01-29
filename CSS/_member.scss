@@ -5,14 +5,72 @@ $GreyColor:#859196;
     padding: 0 8%;
     margin-bottom: 80px;
     transition: .5s;
+}
 
-    .member-item {
-        position: relative;
+.member-item {
+    position: relative;
+
+}
+
+.info {
+    position: absolute;
+    background: #327406d2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 80px 0;
+    color: white;
+    line-height: 1.5;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+    h4 {
+        font-weight: 500;
+        font-size: 20px;
     }
 
-    // &:hover .nav-btn {
-    //     visibility: visible;
-    // }
+    p {
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .fab {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 40px;
+        font-size: 20px;
+        transition: .5s;
+        cursor: pointer;
+
+        &:hover {
+            background: #6dc234;
+        }
+    }
+}
+
+.member-item:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.member-item:hover .info .fab {
+    animation: social .5s linear forwards;
+}
+.member-item:hover .info h4 {
+    animation: title .5s linear forwards;
+}
+.member-item:hover .info p {
+    animation: fade .5s linear forwards;
+}
+
+
+.info-show {
+    display: block;
 }
 
 .owl-carousel:hover .nav-btn {

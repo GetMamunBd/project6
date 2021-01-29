@@ -40,11 +40,11 @@
         top: 10vh;
         right: 0;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-around;
         height: 90vh;
         width: 300px;
-        padding: 50px 8% 200px 0;
+        padding: 50px 0 200px 0;
         background: rgba(0, 0, 0, 0.95);
         transform: translateX(100%);
         opacity: 0;
@@ -84,10 +84,46 @@
 
 @keyframes icon {
     from {
-        transform: rotateZ(-10deg);
+        transform: rotateZ(-30deg);
     }
 
     to {
-        transform: rotateZ(10deg);
+        transform: rotateZ(30deg);
+    }
+}
+
+@keyframes social {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes title {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
